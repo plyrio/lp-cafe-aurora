@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Fonts */
+@font-face {
+    font-family: 'AuroraBrand';
+    src: url('/src/assets/fonts/ClickerScript-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AuroraBold';
+    src: url("/src/assets/fonts/PlayfairDisplay-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AuroraRegular';
+    src: url("/src/assets/fonts/PlayfairDisplay-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer utilities {
+    .font-brand {
+        font-family: 'AuroraBrand', cursive;
+    }
+    .font-regular {
+        font-family: "AuroraRegular", serif;
+    }
+    .font-bold {
+        font-family: "AuroraBold", serif;
+    }
+}
