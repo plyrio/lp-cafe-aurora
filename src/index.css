@@ -29,7 +29,13 @@
     .font-regular {
         font-family: "AuroraRegular", serif;
     }
-    .font-bold {
+    .font-aurorabold {
         font-family: "AuroraBold", serif;
     }
+}
+
+@layer base {
+  body {
+    font-family: "AuroraRegular", serif;
+  }
 }
