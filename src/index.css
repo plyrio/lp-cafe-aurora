@@ -47,3 +47,7 @@
 .bg-footer {
     background-image: url('/src/assets/images/fotter_image.png');
 }
+
+.bg-hero {
+    background-image: url('/src/assets/images/coffee_image.png');
+}

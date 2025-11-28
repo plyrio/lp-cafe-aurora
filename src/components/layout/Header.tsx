@@ -1,20 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Actions } from "./Actions";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
 
 export const Header = () => {
   const [state, setState] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   
 
   return (
-    <header className="bg-neutral-600/30 w-full  md:static">
-      <nav className={`${state ? 'pb-4' : 'pb-0'} sticky max-w-7xl items-center px-4 mx-auto md:flex md:px-8 md:pb-0`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 
+        ${scrolled ? "backdrop-blur-xs bg-black/20  shadow-lg" : "bg-transparent"}
+      `}>
+      <nav className={`${state ? 'pb-4 backdrop-blur-xs bg-black shadow-lg' : 'pb-0'}  max-w-7xl items-center px-4 mx-auto md:flex md:px-8 md:pb-0`}>
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Logo className="text-white drop-shadow-sm drop-shadow-orange-300/50" />
           <div className="md:hidden">
-            <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+            <button className="text-white outline-none p-2 rounded-md focus:border-gray-400 focus:border"
               onClick={() => setState(!state)}
             >
               {
