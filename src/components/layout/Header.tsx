@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header className="bg-neutral-600/30 w-full  md:static">
-      <nav className={`${state ? 'pb-4' : 'pb-0'} sticky items-center px-4 mx-auto md:flex md:px-8 md:pb-0`}>
+      <nav className={`${state ? 'pb-4' : 'pb-0'} sticky max-w-7xl items-center px-4 mx-auto md:flex md:px-8 md:pb-0`}>
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Logo className="text-white drop-shadow-sm drop-shadow-orange-300/50" />
           <div className="md:hidden">

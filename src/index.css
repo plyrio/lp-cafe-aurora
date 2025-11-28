@@ -39,3 +39,11 @@
     font-family: "AuroraRegular", serif;
   }
 }
+
+.bg-header {
+    background-image: url('/src/assets/images/coffee_image.png');
+}
+
+.bg-footer {
+    background-image: url('/src/assets/images/fotter_image.png');
+}
