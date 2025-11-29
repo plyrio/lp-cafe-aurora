@@ -3,7 +3,7 @@ import { Section } from "../ui/Section"
 
 export const Hero = () => {
   return (
-    <Section className="relative flex h-screen w-full overflow-hidden min-w-full" id="hero">
+    <Section className="relative flex h-full md:h-screen w-full overflow-hidden min-w-full" id="hero">
       <div className="absolute inset-0 bg-hero bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
 
