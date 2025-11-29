@@ -2,8 +2,8 @@
 const links = [
   { label: "Home", href: "#" },
   { label: "Menu", href: "#menu" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Contato", href: "#contato" },
+  { label: "Sobre", href: "#about" },
+  { label: "Contato", href: "#contact" },
 ];
 
 export const NavLinks = () => {
