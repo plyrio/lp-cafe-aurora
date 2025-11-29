@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-hero bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 item-center pt-16 pb-4">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 item-center pt-26  pb-14">
         <div className="flex flex-col font-medium items-start max-w-3xl space-y-4 text-white ">
 
           <p className="font-medium text-sm sm:text-base md:text-lg lg:text-xl">
