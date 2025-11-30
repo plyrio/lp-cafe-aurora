@@ -2,7 +2,7 @@ import { Footer } from "./components/layout/Footer"
 import { Header } from "./components/layout/Header"
 import { Banner } from "./components/sections/Banner"
 import { Different } from "./components/sections/Different"
-import { Discover } from "./components/sections/Discover"
+import { About } from "./components/sections/About"
 import { Feedback } from "./components/sections/Feedback"
 import { Hero } from "./components/sections/Hero"
 import { Menu } from "./components/sections/Menu"
@@ -16,7 +16,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Discover />
+      <About />
       <Menu />
       <Different />
       <Banner />
