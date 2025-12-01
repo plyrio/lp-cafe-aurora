@@ -11,19 +11,19 @@ export const Hero = () => {
       <motion.div initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3.3, delay: 0.3 }}
-        viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 item-center pt-26 pb-14">
-        <div className="flex flex-col font-medium items-start max-w-3xl space-y-4 text-white">
+        viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-prose px-4 md:px-8 item-start  pt-36 pb-28">
+        <div className="flex flex-col font-medium items-start max-w-md space-y-4 text-white">
 
-          <p className="font-aurorabold text-sm sm:text-base md:text-lg lg:text-xl">
-            Nós garantimos o melhor começo para a sua manhã com
+          <p className="font-aurorabold text-sm sm:text-base md:text-lg lg:text-xl  drop-shadow-black drop-shadow-2xl">
+            Dê o melhor início ao seu dia com
           </p>
 
 
-          <p className="font-brand leading-none text-[clamp(3rem,12vw,14rem)]">
+          <p className="font-brand leading-none text-9xl md:text-[200px]  drop-shadow-black drop-shadow-2xl">
             Café
           </p>
 
-          <p className="font-medium text-sm sm:text-base md:text-lg lg:text-xl max-w-xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-xl drop-shadow-black drop-shadow-2xl">
             Nada melhor do que começar o dia com uma xícara de café.
             Descubra os melhores sabores que você já experimentou.
             Nós oferecemos sempre o melhor para nossos clientes.
