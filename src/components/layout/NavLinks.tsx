@@ -1,8 +1,8 @@
 
 const links = [
   { label: "Home", href: "#" },
-  { label: "Menu", href: "#menu" },
   { label: "Sobre", href: "#about" },
+  { label: "Menu", href: "#menu" },
   { label: "Contato", href: "#contact" },
 ];
 

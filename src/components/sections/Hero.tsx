@@ -8,11 +8,12 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-hero bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
 
-      <motion.div initial={{ opacity: 0, x: -40 }}
+      <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-16 md:items-center md:gap-4 lg:px-8">
+        <motion.div initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3.3, delay: 0.3 }}
-        viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-prose px-4 md:px-8 item-start  pt-36 pb-28">
-        <div className="flex flex-col font-medium items-start max-w-md space-y-4 text-white">
+        viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-7xl item-start  pt-36 pb-28">
+        <div className="flex flex-col font-medium items-start max-w-md lg:max-w-xl space-y-4 text-white">
 
           <p className="font-aurorabold text-sm sm:text-base md:text-lg lg:text-xl  drop-shadow-black drop-shadow-2xl">
             Dê o melhor início ao seu dia com
@@ -34,6 +35,9 @@ export const Hero = () => {
           </div>
         </div>
       </motion.div>
+      </div>
+
+      
 
     </Section>
   )
