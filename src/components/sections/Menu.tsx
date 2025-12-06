@@ -8,8 +8,6 @@ export const Menu = () => {
 
     return (
         <Section id='menu'>
-            <div
-                className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-16 md:items-center md:gap-4 lg:px-8 ">
                 <div className="text-center">
                     <h1 className="text-4xl font-aurorabold sm:text-5xl text-stone-900">
                         Aproveite um novo estilo de café
@@ -42,9 +40,6 @@ export const Menu = () => {
                         ))}
                     </ul>
                 </div>
-
-
-            </div>
         </Section>
     )
 }
