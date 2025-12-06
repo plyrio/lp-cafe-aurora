@@ -6,8 +6,7 @@ type SectionProps = {
     className?: string;
     id: string;
     noColumns?: boolean;
-    motionAll?: boolean;
-    
+    motionAll?: boolean;    
 }
 
 
@@ -26,7 +25,7 @@ export const Section = ({children, className, id, noColumns = true, motionAll = 
           <motion.div 
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2.7, delay: 0.3 }}
+        transition={{ duration: 1.7, delay: 0.5 }}
         viewport={{ once: true, amount: 0.2 }}
         className= {innerClass}>
           {children}

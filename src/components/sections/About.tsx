@@ -3,7 +3,6 @@ import { Section } from '../ui/Section'
 import CupCoffe from '../../assets/images/cup-coffe.png'
 import { Button } from '../ui/Button'
 import CoffeBlastLeft from '../../assets/images/coffee_blast_left.png'
-import { motion } from 'motion/react'
 
 export const About = () => {
   return (
@@ -27,26 +26,7 @@ export const About = () => {
 
         
       <div className="absolute left-0 bottom-0 w-full pointer-events-none">
-        <motion.img src={CoffeBlastLeft} alt="cfb" className='max-w-[220px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[420px] 2xl:max-w-[480px] translate-y-1/3 lg:translate-y-1/4 xl:translate-y-0'
-          initial={{
-            opacity: 0,
-            x: -120,
-            y: 20,
-            scaleY: 1.15,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            y: 0,
-            scaleY: 1,
-          }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{
-            duration: 2.5,
-            ease: [0.25, 0.1, 0.25, 1],
-          }}
-
-        />
+        <img src={CoffeBlastLeft} alt="cfb" className='max-w-[220px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[420px] 2xl:max-w-[480px] translate-y-1/3 lg:translate-y-1/4 xl:translate-y-0'/>
       </div>
     </Section>
   )

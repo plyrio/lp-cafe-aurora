@@ -7,9 +7,7 @@ export const Hero = () => {
     <Section className="relative flex h-full w-full overflow-hidden min-w-full" id="hero" motionAll={false}>
       <div className="absolute inset-0 bg-hero bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
-
-      <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-16 md:items-center md:gap-4 lg:px-8">
-        <motion.div initial={{ opacity: 0, x: -40 }}
+      <motion.div initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3.3, delay: 0.3 }}
         viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-7xl item-start  pt-36 pb-28">
@@ -35,10 +33,6 @@ export const Hero = () => {
           </div>
         </div>
       </motion.div>
-      </div>
-
-      
-
     </Section>
   )
 }
