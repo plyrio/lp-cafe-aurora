@@ -4,8 +4,8 @@ import { Section } from "../ui/Section"
 
 export const Hero = () => {
   return (
-    <Section className="relative flex h-full w-full overflow-hidden min-w-full" id="hero" motionAll={false}>
-      <div className="absolute inset-0 bg-hero bg-cover bg-center"></div>
+    <Section className="relative flex h-full w-full overflow-hidden bg-hero bg-cover bg-center" id="hero" motionAll={false}>
+      
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
       <motion.div initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}

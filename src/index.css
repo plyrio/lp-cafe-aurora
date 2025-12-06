@@ -5,6 +5,7 @@ html {
 }
 
 
+
 /* Fonts */
 @font-face {
     font-family: 'AuroraBrand';
@@ -55,4 +56,8 @@ html {
 
 .bg-hero {
     background-image: url('/src/assets/images/coffee_image.png');
+}
+
+.bg-banner {
+    background-image: url('/src/assets/images/banner-bg.png');
 }

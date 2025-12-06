@@ -29,5 +29,6 @@ export const About = () => {
         <img src={CoffeBlastLeft} alt="cfb" className='max-w-[220px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[420px] 2xl:max-w-[480px] translate-y-1/3 lg:translate-y-1/4 xl:translate-y-0'/>
       </div>
     </Section>
+    
   )
 }

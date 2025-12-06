@@ -19,7 +19,7 @@ export const Section = ({children, className, id, noColumns = true, motionAll = 
 
   
   return (
-      <section className={twMerge(`max-w-7xl items-center px-4 mx-auto md:flex md:px-8 md:pb-0`, className)} id={id}>
+      <section className={twMerge(`items-center px-4 mx-auto md:flex md:px-8 md:pb-0`, className)} id={id}>
         {motionAll ? 
         (
           <motion.div 

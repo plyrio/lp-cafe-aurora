@@ -19,7 +19,7 @@ export const Menu = () => {
 
                     <ul className="mt-8 grid lg:gap-4 gap-10 sm:grid-cols-2 lg:grid-cols-4 items-stretch  lg:space-y-0">
                         {coffeeProducts.map((product) => (
-                            <li className='bg-orange-300/20 border border-orange-300/42 flex flex-col h-full shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400' key={product.id}>
+                            <li className='bg-orange-50 hover:bg-orange-100 border border-orange-100 flex flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400' key={product.id}>
                                 <img src={product.image} alt="" className="h-auto w-full object-cover" />
                                 
 
