@@ -42,7 +42,7 @@ export const Feedback = () => {
                                         <img src={Aspas} alt="" className='max-h-10 ms-5 w-auto object-contain object-left ' />
                                         <CardContent className=" flex flex-col aspect-auto items-center justify-center px-12">
                                             <span className="text-base text-pretty text-neutral-500 sm:text-lg/relaxed">{item.text}</span>
-                                            <div className='flex w-fit mx-auto relative -bottom-20  flex-col items-center text-center gap-6'> 
+                                            <div className='flex w-fit mx-auto relative -bottom-20  flex-col items-center text-center gap-6'>
                                                 <div className='flex flex-col gap-2'>
                                                     <h3 className='text-4xl text-yellow-900 font-aurorabold'>{item.name}</h3>
                                                     <h5 className='text-2xl text-pretty text-neutral-500 sm:text-xl/relaxed'>{item.role}</h5>
