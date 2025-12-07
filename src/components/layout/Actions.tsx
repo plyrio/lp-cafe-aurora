@@ -1,4 +1,4 @@
-import { Button } from "../ui/Button"
+import { Button } from "../ui/ButtonDefault"
 
 export const Actions = () => {
   return (

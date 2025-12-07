@@ -1,4 +1,4 @@
-import { Button } from '../ui/Button'
+import { Button } from '../ui/ButtonDefault'
 import { Section } from '../ui/Section'
 import CupCoffeBanner from '../../assets/images/cup.png'
 import CoffeBean from '../../assets/images/coffee_bean.png'

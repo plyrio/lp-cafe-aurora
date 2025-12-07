@@ -1,7 +1,7 @@
 
 import { Section } from '../ui/Section'
 import CupCoffe from '../../assets/images/cup-coffe.png'
-import { Button } from '../ui/Button'
+import { Button } from '../ui/ButtonDefault'
 import CoffeBlastLeft from '../../assets/images/coffee_blast_left.png'
 
 export const About = () => {

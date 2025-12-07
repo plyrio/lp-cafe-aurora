@@ -1,7 +1,7 @@
 import { Section } from '../ui/Section'
 import { coffeeProducts } from '../../constants/productsList'
 import { formatCurrencyBRL } from '../../utils/formatCurrency'
-import { Button } from '../ui/Button'
+import { Button } from '../ui/ButtonDefault'
 
 
 export const Menu = () => {

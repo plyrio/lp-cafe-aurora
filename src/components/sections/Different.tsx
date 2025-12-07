@@ -1,5 +1,5 @@
 import { coffeeAdvantages } from '../../constants/coffeAdvantages'
-import { Button } from '../ui/Button'
+import { Button } from '../ui/ButtonDefault'
 import { Section } from '../ui/Section'
 
 export const Different = () => {
@@ -45,8 +45,6 @@ export const Different = () => {
                 </h3>
                 <Button children="Junte-se a nós" href={''} className='flex w-fit mx-auto relative mt-8' />
             </div>
-
-
         </Section>
     )
 }

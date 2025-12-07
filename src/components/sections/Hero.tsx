@@ -1,10 +1,10 @@
 import { motion } from "motion/react"
-import { Button } from "../ui/Button"
+import { Button } from "../ui/ButtonDefault"
 import { Section } from "../ui/Section"
 
 export const Hero = () => {
   return (
-    <Section className="relative flex h-full w-full overflow-hidden bg-hero bg-cover bg-center" id="hero" motionAll={false}>
+    <Section className="relative flex h-full w-full overflow-hidden bg-hero bg-cover bg-center" id="hero">
       
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/20 to-transparent"></div>
       <motion.div initial={{ opacity: 0, x: -40 }}
