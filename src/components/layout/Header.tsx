@@ -24,7 +24,7 @@ export const Header = () => {
       `}>
       <nav className={`${state ? 'pb-4 backdrop-blur-xs bg-black shadow-lg' : 'pb-0'}  max-w-7xl items-center px-4 mx-auto md:flex md:px-8 md:pb-0`}>
         <div className="flex items-center justify-between py-3 md:py-3 md:block">
-          <Logo className="text-white drop-shadow-sm drop-shadow-orange-300/50" />
+          <Logo className="text-white" children="Café Aurora" />
           <div className="md:hidden">
             <button className="text-white outline-none p-2 rounded-md focus:border-gray-400 focus:border"
               onClick={() => setState(!state)}

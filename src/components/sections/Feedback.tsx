@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/carousel"
 import { feedbacks } from '@/constants/feedback'
 import Aspas from "@/assets/images/aspas.png"
+import coffeBlast from "@/assets/images/coffee_blast.png"
+import coffeBlastUpper from "@/assets/images/coffee_blast_upper_left.png"
 
 export const Feedback = () => {
     const plugin = React.useRef(
@@ -26,10 +28,10 @@ export const Feedback = () => {
                 <p className="mt-4 text-base text-pretty text-neutral-500 sm:text-lg/relaxed">
                     Nossos cliente têm coisas incríveis para dizer sobre nós
                 </p>
-
-                <Carousel
+                <div>
+                    <Carousel
                     plugins={[plugin.current]}
-                    className="h-full w-full mt-8 relative overflow-visible"
+                    className="h-full w-11/12 mx-auto mt-8 relative overflow-visible"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
 
@@ -63,8 +65,11 @@ export const Feedback = () => {
                     <CarouselNext className="rounded-lg h-16 w-auto aspect-square absolute opacity-100 bg-orange-300 text-yellow-900 -translate-x-3 " />
 
                 </Carousel>
+                </div>
+                
             </div>
-
+            <img src={coffeBlastUpper} alt="grãos de café" className=' md:block absolute left-0 bottom-20 pointer-events-none w-2/3 md:max-w-1/3 hidden md-flex h-auto' />
+            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute right-0 md:top-0 lg:top-0 hidden md-flex  pointer-events-none w-2/3 md:max-w-1/3 h-auto' />
         </Section>
     )
 }

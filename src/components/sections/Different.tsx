@@ -1,12 +1,13 @@
 import { coffeeAdvantages } from '../../constants/coffeAdvantages'
-import { Button } from '../ui/ButtonDefault'
+import { Button } from "@/components/ui/button"
 import { Section } from '../ui/Section'
+import coffeBlast from "@/assets/images/coffee_blast.png"
 
 export const Different = () => {
     return (
-        <Section id='different'>
+        <Section id='different' className='relative overflow-visible z-20'>
             <div className="text-center">
-                <h1 className="text-4xl font-aurorabold sm:text-5xl text-stone-900">
+                <h1 className="text-4xl font-aurorabold sm:text-5xl text-yellow-900 z-30 relative">
                     Por que somos diferentes?
                 </h1>
 
@@ -35,16 +36,20 @@ export const Different = () => {
                         </li>
                     ))}
                 </ul>
-                
+
 
                 <p className="mt-4 text-base text-pretty text-neutral-500 sm:text-lg/relaxed">
                     Grandes ideias começam com um ótimo café deixe-nos ajudar você a alcançar isso
                 </p>
-                <h3 className="text-3xl font-aurorabold sm:text-3xl text-stone-900">
+                <h3 className="text-3xl font-aurorabold sm:text-3xl text-yellow-900">
                     Comece hoje mesmo.
                 </h3>
-                <Button children="Junte-se a nós" href={''} className='flex w-fit mx-auto relative mt-8' />
+                <Button type="submit" variant="default" className='mt-8 rounded-l-none  h-full border-none text-stone-900 bg-orange-300 rounded-3xl hover:bg-orange-200'>
+                    Junte-se a nós
+                </Button>
+                
             </div>
+            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute right-0 -top-15 md:-top-10 pointer-events-none w-2/3 md:max-w-1/4 h-auto' />
         </Section>
     )
 }

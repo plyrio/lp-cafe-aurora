@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { Button } from "../ui/ButtonDefault"
+import { Button } from "@/components/ui/button"
 import { Section } from "../ui/Section"
 
 export const Hero = () => {
@@ -13,7 +13,7 @@ export const Hero = () => {
         viewport={{ once: true, amount: 0.2 }} className="relative z-10 w-full max-w-7xl item-start  pt-36 pb-28">
         <div className="flex flex-col font-medium items-start max-w-md lg:max-w-xl space-y-4 text-white">
 
-          <p className="font-aurorabold text-sm sm:text-base md:text-lg lg:text-xl  drop-shadow-black drop-shadow-2xl">
+          <p className="font-aurorabold text-sm sm:text-base md:text-lg lg:text-xl  drop-shadow-md">
             Dê o melhor início ao seu dia com
           </p>
 
@@ -29,7 +29,9 @@ export const Hero = () => {
           </p>
 
           <div>
-            <Button href="#">Peça Agora</Button>
+            <Button type="submit" variant="default" className='rounded-l-none  h-full border-none text-stone-900 bg-orange-300 rounded-3xl hover:bg-orange-200'>
+        Peça Agora
+      </Button>
           </div>
         </div>
       </motion.div>
