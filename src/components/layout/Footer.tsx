@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
                         <div className="text-white">
-                            <Logo />
+                            <Logo children="Café Aurora"  />
                         </div>
 
                         <p className="mt-4 max-w-xs text-white">
