@@ -40,14 +40,14 @@ export const Feedback = () => {
                         {feedbacks.map((item) => (
                             <CarouselItem key={item.id} className='flex mx-auto items-center justify-center'>
                                 <div className="p-1 pb-20 e">
-                                    <Card className='bg-orange-50 hover:bg-orange-100 border border-orange-100 flex py-8 px-8 flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400'>
+                                    <Card className='bg-orange-50 hover:bg-orange-100 border border-orange-100 flex md:p-8 flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400'>
                                         <img src={Aspas} alt="" className='max-h-10 ms-5 w-auto object-contain object-left ' />
                                         <CardContent className=" flex flex-col aspect-auto items-center justify-center px-12">
                                             <span className="text-base text-pretty text-neutral-500 sm:text-lg/relaxed">{item.text}</span>
-                                            <div className='flex w-fit mx-auto relative -bottom-20  flex-col items-center text-center gap-6'>
-                                                <div className='flex flex-col gap-2'>
-                                                    <h3 className='text-4xl text-yellow-900 font-aurorabold'>{item.name}</h3>
-                                                    <h5 className='text-2xl text-pretty text-neutral-500 sm:text-xl/relaxed'>{item.role}</h5>
+                                            <div className='flex w-fit mx-auto relative -bottom-20  flex-col items-center text-center gap-3'>
+                                                <div className='flex flex-col '>
+                                                    <h3 className='md:text-4xl text-2xl text-yellow-900 font-aurorabold'>{item.name}</h3>
+                                                    <h5 className='md:text-2xl text-sm text-pretty text-neutral-500 sm:text-xl/relaxed'>{item.role}</h5>
                                                 </div>
 
                                                 <img src={item.image} alt="" className='' />
@@ -68,8 +68,8 @@ export const Feedback = () => {
                 </div>
                 
             </div>
-            <img src={coffeBlastUpper} alt="grãos de café" className=' md:block absolute left-0 bottom-20 pointer-events-none w-2/3 md:max-w-1/3 hidden md-flex h-auto' />
-            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute right-0 md:top-0 lg:top-0 hidden md-flex  pointer-events-none w-2/3 md:max-w-1/3 h-auto' />
+            <img src={coffeBlastUpper} alt="grãos de café" className=' md:block absolute pointer-events-none left-0 bottom-0 w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
+            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute pointer-events-none right-0 top-55 md:top-50 lg:top-30 xl:top-20 w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
         </Section>
     )
 }

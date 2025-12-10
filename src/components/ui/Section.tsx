@@ -11,7 +11,7 @@ type SectionProps = {
 
 
 export const Section = ({ children, className, id, noColumns = true }: SectionProps) => {
-  const innerBase = "mx-auto w-full max-w-7xl px-4  sm:px-6 sm:py-10 md:items-center md:gap-4 lg:px-8";
+  const innerBase = "mx-auto w-full px-4  sm:px-6 sm:py-6 md:items-center md:gap-4 lg:px-8  z-20";
   const innerGridClass = noColumns ? "" : "md:grid md:grid-cols-2";
 
 

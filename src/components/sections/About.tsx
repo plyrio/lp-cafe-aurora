@@ -29,7 +29,7 @@ export const About = () => {
 
       <div className="absolute left-0 bottom-0 w-full pointer-events-none">
       </div>
-      <img src={CoffeBlastLeft} alt="grãos de café" className=' md:block absolute left-0 -bottom-10 pointer-events-none w-2/3 md:max-w-1/4 h-auto' />
+      <img src={CoffeBlastLeft} alt="grãos de café" className=' md:block absolute left-0 -bottom-10 pointer-events-none w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
     </Section>
 
   )

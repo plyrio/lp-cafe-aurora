@@ -49,7 +49,7 @@ export const Different = () => {
                 </Button>
                 
             </div>
-            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute right-0 -top-15 md:-top-10 pointer-events-none w-2/3 md:max-w-1/4 h-auto' />
+            <img src={coffeBlast} alt="grãos de café" className=' md:block absolute pointer-events-none right-0 -top-15 md:-top-25 w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
         </Section>
     )
 }
