@@ -2,6 +2,8 @@ import { Section } from '../ui/Section'
 import { coffeeProducts } from '../../constants/productsList'
 import { formatCurrencyBRL } from '../../utils/formatCurrency'
 import { Button } from "@/components/ui/button"
+import { motion } from 'motion/react'
+import { container, item } from '@/animations/variants'
 
 
 export const Menu = () => {
@@ -17,9 +19,14 @@ export const Menu = () => {
                     Explore todos os sabores de café conosco. Sempre há uma nova xícara que vale a pena experimentar.
                 </p>
 
-                <ul className="mt-8 grid lg:gap-4 gap-10 sm:grid-cols-2 lg:grid-cols-4 items-stretch  lg:space-y-0">
+                <motion.ul
+                    variants={container}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    className="mt-8 grid lg:gap-4 gap-10 sm:grid-cols-2 lg:grid-cols-4 items-stretch  lg:space-y-0">
                     {coffeeProducts.map((product) => (
-                        <li className='bg-orange-50 hover:bg-orange-100 border border-orange-100 flex flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400' key={product.id}>
+                        <motion.li className='bg-orange-50 hover:bg-orange-100 border border-orange-100 flex flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400' key={product.id} variants={item}>
                             <img src={product.image} alt="" className="h-auto w-full object-cover" />
 
 
@@ -37,10 +44,10 @@ export const Menu = () => {
                             <Button type="submit" variant="default" className='flex w-fit mx-auto relative -bottom-5 h-auto rounded-l-none border-none text-stone-900 bg-orange-300 rounded-3xl hover:bg-orange-200'>
                                 Peça Agora
                             </Button>
-                
-                        </li>
+
+                        </motion.li>
                     ))}
-                </ul>
+                </motion.ul>
             </div>
         </Section>
     )

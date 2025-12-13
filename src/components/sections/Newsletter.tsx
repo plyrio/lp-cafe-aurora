@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import pngwing1 from "@/assets/images/pngwing_left.png"
 import pngwing2 from "@/assets/images/pngwing 2.png"
+import { motion } from 'motion/react'
+import { fadeLeft, fadeRight } from '@/animations/variants'
 
 
 export const Newsletter = () => {
@@ -29,9 +31,17 @@ export const Newsletter = () => {
 
             <div className='flex'>
                 {/* Esquerda */}
-                <img src={pngwing1} alt="grãos de café" className='hidden md:block absolute pointer-events-none left-0 -bottom-2/6  w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
+                <motion.img
+        variants={fadeLeft}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}  src={pngwing1} alt="grãos de café" className='hidden md:block absolute pointer-events-none left-0 -bottom-2/6  w-1/2 sm:w-2/3 md:max-w-1/4 h-auto' />
                 {/* Direita */}
-                <img src={pngwing2} alt="grãos de café" className='hidden md:block absolute right-0 -bottom-2/6 w-1/2 sm:w-2/3 md:max-w-1/4 h-auto pointer-events-none overflow-visible' />
+                <motion.img
+        variants={fadeRight}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}  src={pngwing2} alt="grãos de café" className='hidden md:block absolute right-0 -bottom-2/6 w-1/2 sm:w-2/3 md:max-w-1/4 h-auto pointer-events-none overflow-visible' />
             </div>
         </Section>
     )
