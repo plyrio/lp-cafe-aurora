@@ -66,6 +66,18 @@ http://localhost:5173
 
 ---
 
+## 🧩 Metodologia e Organização
+Além do desenvolvimento técnico, este projeto também foi utilizado para **praticar metodologia ágil**, simulando um fluxo de trabalho real.
+
+- Planejamento e organização das tarefas no Jira
+- Uso de Scrum, com divisão em sprints
+- Quebra do projeto em pequenas entregas incrementais
+- Evolução contínua do código ao longo das sprints
+
+O objetivo foi reproduzir um ambiente próximo ao de um time de desenvolvimento, reforçando organização, planejamento e disciplina no processo.
+
+---
+
 ## 🎯 Objetivo do Projeto
 
 Este projeto foi desenvolvido com o objetivo de **praticar front-end com React**, reforçando conceitos como:
