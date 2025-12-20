@@ -1,4 +1,3 @@
-
 # ☕ LP Café Aurora
 
 Landing page responsiva desenvolvida em **React + TypeScript + Vite**, com foco em **componentização**, **estrutura de front-end** e **layout moderno**.
@@ -40,28 +39,28 @@ O projeto simula o site institucional de um café, apresentando seções de dest
 ## ▶️ Como executar o projeto localmente
 
 1. Clone o repositório:
-   ``bash
-   git clone https://github.com/plyrio/lp-cafe-aurora.git
-``
+```bash
+git clone https://github.com/plyrio/lp-cafe-aurora.git
+```
+   
 2. Acesse a pasta do projeto:
-``bash
+```bash
 cd lp-cafe-aurora
-``
-
+```
 3. Instale as dependências:
-``bash
+```bash
 npm install
-``
+```
 
 4. Execute o projeto:
-``bash
+```bash
 npm run dev
-``
+```
 
 5. Abra no navegador:
-``navegador
+```navegador
 http://localhost:5173
-``
+```
 
 
 
